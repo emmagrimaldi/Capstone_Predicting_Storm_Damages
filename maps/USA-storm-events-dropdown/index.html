@@ -1,0 +1,40 @@
+
+<html>
+    <head><meta charset="utf-8" /></head>
+    <body>
+        
+        <script type="text/javascript" src="plotlyjs-bundle.js"></script>
+            
+            
+        <script type="text/javascript" src="figure.js"></script>
+        
+        <div id="4cb0a6ef-9f09-4e87-97f4-41ec4d993d45" style="width: 100%; height: 800px;" class="plotly-graph-div"></div>
+        <script type="text/javascript">
+            (function(){
+                window.PLOTLYENV={'BASE_URL': 'https://plot.ly'};
+
+                var gd = document.getElementById('4cb0a6ef-9f09-4e87-97f4-41ec4d993d45')
+                var resizeDebounce = null;
+
+                function resizePlot() {
+                    var bb = gd.getBoundingClientRect();
+                    Plotly.relayout(gd, {
+                        width: bb.width,
+                        height: bb.height
+                    });
+                }
+
+                
+
+                
+                Plotly.plot(gd,  {
+                    data: figure.data,
+                    layout: figure.layout,
+                    frames: figure.frames,
+                    config: {"mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A", "linkText": "Export to plot.ly", "showLink": true}
+                });
+                
+           }());
+        </script>
+    </body>
+</html>
